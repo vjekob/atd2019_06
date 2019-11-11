@@ -1,0 +1,23 @@
+{
+    "source": {
+        "watch": [
+            "./src/**/*.js",
+            "./src/**/*.jsx",
+            "./src/**/*.css"
+        ],
+        "watchTimeout": 1000,
+        "bundle": "./dist/bundle.js",
+        "map": "./dist/bundle.js.map"
+    },
+    "controlAddInScripts": {
+        "watch": [
+            "./public/.controlAddIn/*.js"
+        ],
+        "scripts": "./public/.controlAddIn/*.js",
+        "watchTimeout": 1000
+    },
+    "target": {
+        "scripts": "../AL/src/add-in/scripts",
+        "images": "../AL/src/add-in/images"
+    }
+}
